@@ -1,3 +1,4 @@
+"use client";
 import React, { memo } from "react";
 import { HeaderProps } from "./types";
 import "./Header.styles.css";
