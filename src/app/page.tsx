@@ -5,7 +5,7 @@ import { Header, Navbar, NavItem } from "@/components";
 import { FaHome, FaBlog } from "react-icons/fa";
 import { GrProjects } from "react-icons/gr";
 import { MdOutlineWork } from "react-icons/md";
-import { Hero } from "@/modules/portfolio/ui/hero/Hero";
+import { Hero, Experience, Projects } from "@/modules/portfolio/ui";
 
 export default function Home() {
   const navItems = [
@@ -61,6 +61,8 @@ export default function Home() {
       </Header>
       <main className="main">
         <Hero />
+        <Experience />
+        <Projects />
       </main>
     </div>
   );
