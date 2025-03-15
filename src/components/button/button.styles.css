@@ -21,11 +21,7 @@
     padding: 0;
     margin: 0;
     font-family: inherit;
-  
-    /* Estados */
-  
-  
-    
+      
   }
 .button:disabled {
     cursor: not-allowed;
@@ -37,7 +33,7 @@
   background-color: var(--button-primary-bg);
   color: white;
 }
-.button:hover:not(:disabled) {
+.button--primary:hover:not(:disabled) {
   background-color: var(--button-primary-hover);
 }
 
@@ -45,7 +41,7 @@
   background-color: var(--button-secondary-bg);
   color: white;
 }
-.button:hover:not(:disabled) {
+.button--secondary:hover:not(:disabled) {
   background-color: var(--button-secondary-hover);
 }
 
@@ -54,7 +50,7 @@
   color: var(--button-tertiary-text);
   border: 1px solid currentColor;
 }
-.button:hover:not(:disabled) {
+.button--tertiary:hover:not(:disabled) {
   background-color: rgba(0, 123, 255, 0.1);
 }
 
@@ -62,7 +58,7 @@
   background-color: transparent;
   color: inherit;
 }
-.button:hover:not(:disabled) {
+.button--ghost:hover:not(:disabled) {
   background-color: var(--button-ghost-hover);
 }
 

@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
-import styles from "./page.module.css";
+import "./page.styles.css";
 import { Header, Navbar, NavItem } from "@/components";
 import { FaHome, FaBlog } from "react-icons/fa";
 import { GrProjects } from "react-icons/gr";
 import { MdOutlineWork } from "react-icons/md";
+import { Hero } from "@/modules/portfolio/ui/hero/Hero";
+
 export default function Home() {
   const navItems = [
     {
@@ -38,7 +40,7 @@ export default function Home() {
     console.log("Clicked:", item.label);
   };
   return (
-    <div className={styles.page}>
+    <div className="page">
       <Header>
         <Navbar
           items={navItems}
@@ -47,7 +49,8 @@ export default function Home() {
               width={50}
               height={50}
               src="/Sabedoria.svg"
-              alt="Logo"
+              alt="Sabedoria"
+              title="Sabedoria"
               priority
             />
           }
@@ -56,6 +59,9 @@ export default function Home() {
           onNavItemClick={handleNavItemClick}
         />
       </Header>
+      <main className="main">
+        <Hero />
+      </main>
     </div>
   );
 }
