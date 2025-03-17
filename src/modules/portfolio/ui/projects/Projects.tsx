@@ -18,7 +18,7 @@ export const Projects = () => {
     {
       title: "Project Name",
       description: "A brief description of the project and its main features.",
-      image: "/sabedoria.svg",
+      image: "/sabedoria-logo.svg",
       technologies: ["React", "TypeScript", "Node.js"],
       liveUrl: "https://project.com",
       githubUrl: "https://github.com/username/project",

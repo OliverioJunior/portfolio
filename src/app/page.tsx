@@ -49,7 +49,7 @@ export default function Home() {
             <Image
               width={50}
               height={50}
-              src="/sabedoria.svg"
+              src="/sabedoria-logo.svg"
               alt="Sabedoria"
               title="Sabedoria"
               priority
