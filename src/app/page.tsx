@@ -5,7 +5,7 @@ import { Header, Navbar, NavItem } from "@/components";
 import { FaHome, FaBlog } from "react-icons/fa";
 import { GrProjects } from "react-icons/gr";
 import { MdOutlineWork, MdContactPhone } from "react-icons/md";
-import { Hero, Experience, Projects } from "@/modules/portfolio/ui";
+import { Hero, Experience, Projects, Footer } from "@/modules/portfolio/ui";
 
 export default function Home() {
   const navItems = [
@@ -17,21 +17,17 @@ export default function Home() {
     },
     {
       label: "Experiências",
-      href: "/experiences",
+      href: "/#experiences",
       icon: <MdOutlineWork />,
     },
     {
       label: "Projetos",
-      href: "/projects",
+      href: "/#projects",
       icon: <GrProjects />,
-      children: [
-        { label: "Web", href: "/projects/web" },
-        { label: "Mobile", href: "/projects/mobile" },
-      ],
     },
     {
       label: "Entrar em Contato",
-      href: "/contactme",
+      href: "/#contactme",
       icon: <MdContactPhone />,
     },
     {
@@ -53,7 +49,7 @@ export default function Home() {
             <Image
               width={50}
               height={50}
-              src="/Sabedoria.svg"
+              src="/sabedoria.svg"
               alt="Sabedoria"
               title="Sabedoria"
               priority
@@ -69,6 +65,7 @@ export default function Home() {
         <Experience />
         <Projects />
       </main>
+      <Footer />
     </div>
   );
 }
