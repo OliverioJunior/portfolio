@@ -11,18 +11,18 @@ export const Hero = () => {
         <h1 className={styles.hero__title}>Olivério Júnior</h1>
         <h2 className={styles.hero__subtitle}>Software Engineer</h2>
         <p className={styles.hero__description}>
-          Building modern web applications with a focus on user experience and
-          performance
+          Construindo aplicações web modernas com foco em experiência do usuário
+          e performance
         </p>
         <div className={styles.hero__actions}>
           <Button size={ButtonSize.MEDIUM} variant={ButtonVariant.GHOST}>
             <a href="#projects" className={styles.hero__button__primary}>
-              {"View Projects "}
+              {"Ver Projetos "}
             </a>
           </Button>
           <Button size={ButtonSize.MEDIUM} variant={ButtonVariant.GHOST}>
             <a href="#contact" className={styles.hero__button__secondary}>
-              Contact Me
+              Entre em Contato
             </a>
           </Button>
         </div>

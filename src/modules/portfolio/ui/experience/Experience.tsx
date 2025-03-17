@@ -13,19 +13,51 @@ interface ExperienceItem {
 export const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
-      company: "Company Name",
+      company: "Arena Sportlucky",
       role: "Full Stack Developer",
-      period: "2022 - Present",
+      period: "2023 - 2025",
       description:
         "Led development of multiple web applications using React and Node.js. Implemented CI/CD pipelines and improved application performance by 40%.",
-      technologies: ["React", "Node.js", "TypeScript", "AWS"],
+      technologies: [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "Nextjs",
+        "Electron",
+        "Git",
+        "Github",
+        "Docker",
+        "Figma",
+        "Agile",
+      ],
     },
-    // Add more experiences...
+    {
+      company: "Startup Zam",
+      role: "Desenvolvedor Front-end Voluntário",
+      period: "Mai 2022 - Set 2022",
+      description:
+        "Colaborei em equipes ágeis utilizando o framework Scrum, aprimorando habilidades em metodologias de desenvolvimento.",
+      technologies: [
+        "React Native",
+        "Apollo",
+        "GraphQL",
+        "TypeScript",
+        "Figma",
+      ],
+    },
+    {
+      company: "Triple Axis",
+      role: "Trainee",
+      period: "2021 - 2022",
+      description:
+        "Colaborei em equipes ágeis utilizando o framework Scrum, aprimorando habilidades em metodologias de desenvolvimento.",
+      technologies: ["React"],
+    },
   ];
 
   return (
     <section className={styles.experience} id="experiences">
-      <h2 className="experience__title">Professional Experience</h2>
+      <h2 className={styles.experience__title}>Professional Experience</h2>
       <div className={styles.experience__timeline}>
         {experiences.map((exp, index) => (
           <div key={index} className={styles.experience__item}>
