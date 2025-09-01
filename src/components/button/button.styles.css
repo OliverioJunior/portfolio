@@ -30,25 +30,24 @@
   }
 /* Variantes */
 .button--primary {
-  background-color: var(--button-primary-bg);
+  background-color: var(--color-primary);
   color: white;
 }
 .button--primary:hover:not(:disabled) {
-  background-color: var(--button-primary-hover);
+  background-color: var(--color-primary-hover);
 }
 
 .button--secondary {
-  background-color: var(--button-secondary-bg);
+  background-color: var(--color-gray);
   color: white;
 }
 .button--secondary:hover:not(:disabled) {
-  background-color: var(--button-secondary-hover);
+  background-color: var(--color-dark-gray);
 }
 
 .button--tertiary {
   background-color: transparent;
-  color: var(--button-tertiary-text);
-  border: 1px solid currentColor;
+  color: var(--color-primary);
 }
 .button--tertiary:hover:not(:disabled) {
   background-color: rgba(0, 123, 255, 0.1);
@@ -56,10 +55,10 @@
 
 .button--ghost {
   background-color: transparent;
-  color: inherit;
+  color: var(--color-primary);
 }
 .button--ghost:hover:not(:disabled) {
-  background-color: var(--button-ghost-hover);
+  background-color: var(--color-primary-transparent);
 }
 
 /* Tamanhos */
