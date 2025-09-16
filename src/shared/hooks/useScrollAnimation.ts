@@ -88,7 +88,7 @@ export const fadeInRight: Variants = {
   },
 };
 
-export const scaleIn = {
+export const scaleIn: Variants = {
   hidden: {
     opacity: 0,
     scale: 0.8,
@@ -106,7 +106,7 @@ export const scaleIn = {
   },
 };
 
-export const staggerContainer = {
+export const staggerContainer: Variants = {
   hidden: {},
   visible: {
     transition: {

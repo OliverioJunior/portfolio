@@ -49,7 +49,7 @@ export const Experience = () => {
     delay: 300,
   });
 
-  const timelineVariants = {
+  const timelineVariants: Variants = {
     hidden: {},
     visible: {
       transition: {
@@ -102,9 +102,6 @@ export const Experience = () => {
         </motion.h2>
 
         <div className={styles.timeline_wrapper}>
-          {/* Timeline line */}
-          <div className={styles.timeline_line}></div>
-
           <motion.div
             className={styles.timeline_content}
             ref={timelineRef}
