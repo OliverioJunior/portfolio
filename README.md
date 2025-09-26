@@ -1,40 +1,104 @@
-<<<<<<< HEAD
-# portfolio
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## 🚀 Como Executar
 
-First, run the development server:
+### Pré-requisitos
+- Node.js 24+ 
+- npm, yarn, pnpm ou bun
 
+### Instalação
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/OliverioJunior/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Execute o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+## 📝 Scripts Disponíveis
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Inicia o servidor de desenvolvimento com Turbopack
+- `npm run build` - Cria a build de produção
+- `npm run start` - Inicia o servidor de produção
+- `npm run lint` - Executa o linting do código
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Seções do Portfolio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🏠 Hero
+Apresentação principal com nome, título e call-to-actions animados.
 
-## Deploy on Vercel
+### 👨‍💻 Sobre
+Informações pessoais, habilidades técnicas e estatísticas profissionais organizadas em cards interativos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 💼 Experiência
+Timeline interativa com experiências profissionais, incluindo:
+- **Arena Sportlucky** - Full Stack Developer (2023-2025)
+- **Startup Zam** - Desenvolvedor Front-end Voluntário (2022)
+- **Triple Axis** - Trainee (2021-2022)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> master
+### 🚀 Projetos
+Galeria de projetos com modal interativo, destacando:
+- **ERP Sistema** - Sistema de gerenciamento empresarial
+- Tecnologias: React, Next.js, Prisma, PostgreSQL
+
+### 📞 Contato
+Formulário funcional de contato e links para redes sociais.
+
+## 🌐 Deploy
+
+O projeto está configurado para deploy fácil na Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/OliverioJunior/portfolio)
+
+### Deploy Manual
+
+1. Faça a build do projeto:
+```bash
+npm run build
+```
+
+2. O projeto estará pronto na pasta `.next/` para deploy em qualquer plataforma que suporte Next.js.
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+
+1. Fazer fork do projeto
+2. Criar uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abrir um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 📧 Contato
+
+**Olivério Júnior** - Engenheiro de Software
+
+- 📧 Email: [oliverio.junior2@gmail.com](mailto:oliverio.junior2@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/oliverio-junior](https://www.linkedin.com/in/oliverio-junior/)
+- 🐙 GitHub: [github.com/OliverioJunior](https://github.com/OliverioJunior)
+
+---
+
+⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
