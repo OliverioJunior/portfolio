@@ -1,0 +1,141 @@
+/* Container principal do dialog */
+.container {
+  border: none;
+  border-radius: 12px;
+  padding: 0;
+  background: transparent;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 90vw;
+  max-height: 90vh;
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+}
+
+/* Backdrop do modal */
+.container::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Estado fechado */
+.container:not([open]) {
+  display: none;
+  opacity: 0;
+}
+
+/* Animação de entrada */
+.container[open] {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Conteúdo interno */
+.content {
+  background: var(--background-color, #ffffff);
+  color: var(--text-color, #000000);
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+  background: var(--header-background, #f9fafb);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--title-color, #111827);
+}
+
+.closeButton {
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+  background: var(--close-button-hover, rgba(0, 0, 0, 0.1));
+}
+
+/* Corpo do modal */
+.body {
+  padding: 1.5rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .container {
+    max-width: 95vw;
+    margin: 1rem;
+  }
+  
+  .content {
+    min-width: auto;
+  }
+  
+  .header,
+  .body {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.125rem;
+  }
+}
+
+/* Suporte a temas escuros */
+@media (prefers-color-scheme: dark) {
+  .content {
+    --background-color: #1f2937;
+    --text-color: #f9fafb;
+    --border-color: #374151;
+    --header-background: #111827;
+    --title-color: #f9fafb;
+    --close-button-hover: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Estados de foco para acessibilidade */
+.container:focus-visible {
+  outline: 2px solid var(--focus-color, #3b82f6);
+  outline-offset: 2px;
+}
+
+.closeButton:focus-visible {
+  outline: 2px solid var(--focus-color, #3b82f6);
+  outline-offset: 2px;
+}
