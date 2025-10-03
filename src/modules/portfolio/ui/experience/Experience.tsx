@@ -16,9 +16,9 @@ interface ExperienceItem {
 export const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
-      company: "Arena Sportlucky",
+      company: "Consultor de Software",
       role: "Full Stack Developer",
-      period: "2023 - 2025",
+      period: "2023 - Atualmente",
       description:
         "Liderei o desenvolvimento de múltiplas aplicações web utilizando tecnologias modernas. Implementei pipelines de CI/CD e melhorei a performance das aplicações em 40%.",
       technologies: ["React", "Node.js", "TypeScript", "Next.js", "Docker"],
